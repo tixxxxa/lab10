@@ -38,6 +38,6 @@ power<-function(n, delta, sd, sig.level = 0.05, type = 'one.sample',simulation=1
   return(counter/simulation)
 }
 power(n = 30, delta = 0.5, sd = 1, sig.level = 0.05, type = 'one.sample')
-power.t.test(n = 30, delta = 0.5, sd = 1, sig.level = 0.05, type = 'one.sample')
+power.t.test(n = 30, delta = 0.5, sd = 1, sig.level = 0.05, type = 'one.sample')$power
 ```
-Those two results are similar.
+Those two results are similar(0.7568 vs 0.7539627).
